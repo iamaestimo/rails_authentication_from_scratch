@@ -1,0 +1,11 @@
+<%= form_with url: login_path, scope: :user do |form| %>
+  <label for="email">
+    Email
+    <%= form.email_field :email, required: true %>
+  </label>
+  <label for="password">
+    Password
+    <%= form.password_field :password, required: true %>
+  </label>
+  <%= form.submit "Sign In" %>
+<% end %>
